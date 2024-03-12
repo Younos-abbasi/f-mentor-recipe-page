@@ -1,0 +1,143 @@
+---02 LAYOUT
+- Mobile: 375px
+- Desktop: 1440px
+
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: hsl(14, 45%, 36%);
+  --primary-dark-color: hsl(332, 51%, 32%);
+  --neutral-white: hsl(0, 0%, 100%);
+  --neutral-rose-white: hsl(330, 100%, 98%);
+  --neutral-eggshell: hsl(30, 54%, 90%);
+  --neutral-light-gray: hsl(30, 18%, 87%);
+  --neutral-wenge-brown: hsl(30, 10%, 34%);
+  --neutral-dark-charcoal: hsl(24, 5%, 18%);
+}
+
+body {
+  background-color: var(--neutral-eggshell);
+}
+.container {
+  background-color: var(--neutral-white);
+  width: 500px;
+  height: 1400px;
+  border-radius: 18px;
+  margin: 80px auto;
+}
+.container__content {
+  width: 90%;
+  margin: 20px auto;
+  padding: 20px 0;
+}
+.header__image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.header h1 {
+  margin: 15px 0;
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.7rem;
+  color: var(--neutral-dark-charcoal);
+}
+.header p {
+  font-family: "Outfit", sans-serif;
+  font-size: 0.694rem;
+  font-weight: normal;
+  font-style: normal;
+  color: var(--neutral-dark-charcoal);
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+.prep-time {
+  background-color: var(--neutral-rose-white);
+  width: 90%;
+  height: 120px;
+  border-radius: 10px;
+  padding: 5px 0;
+}
+.prep-time p {
+  color: var(--primary-dark-color);
+  font-family: "Outfit", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  padding-left: 15px;
+}
+.prep-time ul {
+  padding-left: 35px;
+}
+.prep-time ul li {
+  line-height: 1.7;
+  font-size: 0.7rem;
+  color: var(--neutral-dark-charcoal);
+}
+h2 {
+  color: var(--primary-color);
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  font-size: 1.1rem;
+  padding: 10px 0;
+}
+.ingredients {
+  margin: 15px 0;
+  border-bottom: 1px solid var(--neutral-light-gray);
+}
+.ingredients ul {
+  padding-left: 18px;
+  padding-bottom: 18px;
+}
+.ingredients ul li {
+  font-size: 0.73rem;
+  font-weight: normal;
+  font-style: normal;
+  color: var(--neutral-dark-charcoal);
+  line-height: 1.6;
+  padding-left: 10px;
+}
+.instruction {
+  border-bottom: 1px solid var(--neutral-light-gray);
+  margin: 15px 0;
+}
+.instruction ol {
+  padding-left: 18px;
+  margin-bottom: 15px;
+}
+.instruction ol li {
+  font-size: 0.73rem;
+  font-weight: normal;
+  font-style: normal;
+  color: var(--neutral-dark-charcoal);
+  line-height: 1.6;
+}
+.nutrition__text {
+  font-size: 0.73rem;
+  font-weight: normal;
+  font-style: normal;
+  color: var(--neutral-dark-charcoal);
+  padding-bottom: 10px;
+}
+.last {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--neutral-light-gray);
+  padding: 10px 15px 0;
+}
+.last span {
+  padding-top: 10px;
+  padding-left: 150px;
+  color: var(--primary-color);
+  font-weight: 700;
+}
+.last p {
+  color: var(--neutral-dark-charcoal);
+  font-size: 0.9rem;
+}
